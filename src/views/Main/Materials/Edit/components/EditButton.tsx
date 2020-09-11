@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { useDrag, DragSourceMonitor } from 'react-dnd';
-
 import { Button } from 'antd';
 
 export type DragOptions = {

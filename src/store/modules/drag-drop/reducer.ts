@@ -10,7 +10,8 @@ export const dragDropReducer = (state = initialState, action: DragDropActionType
         case CHANGE_DRAG_COMPONENT:
             return {
                 ...state,
-                type: action.payload.type
+                type: action.payload.type,
+                subType: action.payload.subType
             }
         default:
             return state;

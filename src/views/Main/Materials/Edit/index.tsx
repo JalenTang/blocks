@@ -6,6 +6,7 @@ import { Card } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
 import EditButton from './components/EditButton';
 import EditImage from './components/EditImage';
+import EditCustom from './components/EditCustom';
 
 import { changeCardVisible } from '@/store/modules/app/actions';
 import { RootState } from '@/store';
@@ -24,6 +25,7 @@ const setTitle = (key: string = 'default'): string => {
         button: '按钮组件',
         image: '图片组件',
         input: '输入框组件',
+        custom: '业务组件',
         default: '按钮组件',
     };
 
@@ -47,6 +49,8 @@ const Edit: FC = (props) => {
         edit = <EditButton />;
     } else if (selectedKey === MaterialsType.IMAGE) {
         edit = <EditImage />;
+    } else if (selectedKey === MaterialsType.CUSTOM) {
+        edit = <EditCustom />;
     }
 
     return state.app.cardVisible ? (

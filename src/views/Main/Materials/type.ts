@@ -1,4 +1,5 @@
 export enum MaterialsType {
     BUTTON = 'button',
-    IMAGE = 'image'
+    IMAGE = 'image',
+    CUSTOM = 'custom'
 }

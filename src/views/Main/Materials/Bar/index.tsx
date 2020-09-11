@@ -49,6 +49,11 @@ const Bar: FC = (props) => {
             icon: <PictureOutlined style={{ fontSize: '16px', color: '#240E49' }} />,
             text: '文本组件',
         },
+        {
+            key: 'custom',
+            icon: <PictureOutlined style={{ fontSize: '16px', color: '#240E49' }} />,
+            text: '业务组件',
+        },
     ];
 
     return (
